@@ -1,0 +1,38 @@
+modLoader="kotlinforforge"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+issueTrackerURL="https://github.com/wuritz/better-creeper-consent/issues"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+displayURL="https://github.com/wuritz/better-creeper-consent"
+logoFile="assets/better_creeper_consent/nfbanner.png"
+credits="Mod original de wuritz. Port no oficial a 1.21.1."
+authors="${mod_authors}"
+description='''${mod_description}'''
+
+[[mixins]]
+config="better_creeper_consent.mixins.json"
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="${neo_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="kotlinforforge"
+    type="required"
+    versionRange="[5.5,6)"
+    ordering="NONE"
+    side="BOTH"
